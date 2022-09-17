@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scholarship</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <form class="page">
+        <div>
+            <div>
+            <h1 class="sch">SCHOLARSHIP APPLICATION FORM</h1><br>
+                <p>Please fill the form below:</p><br>
+                <h4>BIO-DATA section</h4><br>
+                <label><b>Name:</b></label><br><br>
+                <div class="nameA">  
+                    <label><input type="text" id="First" placeholder="First"></label><br>
+                <label id="error" class="error"></label><br><br>
+
+                <label><input type="text" id="lastName" placeholder="Last"></label><br>
+                <label id="error23" class="error"></label><br><br>
+
+                <label><input type="text" id="Last" placeholder="Middle"></label><br>
+                <label id="error22" class="error"></label><br><br></div> 
+
+                <label><b>Gender:</b></label><br>
+                <label> <input type="radio" name="sex">Male </label>
+                <label> <input type="radio" name="sex">Female </label><br>
+                <label id="error1" class="error"></label><br><br>
+
+                <label><b>Religion:</b></label><br>
+                <label><input type="radio" name="religion">Christian </label>
+                <label><input type="radio" name="religion">Muslim</label>
+                <label><input type="radio" name="religion">Traditional/others</label><br>
+                <label id="error2" class="error"></label> <br><br>
+
+                <label><b>D.O.B:</b></label>
+                <label><input type="date" id="mess2"></label><br>
+                <label id="error6a" class="error"></label><br>
+
+                <div class="row1">
+                    <div><label><b>Email:</b></label>
+                        <label><input type="text" id="mess"></label><br>
+                        <label id="error3" class="error"></label><br>
+                    </div>
+
+                    <div> <label><b>Phone no:</b></label>
+                        <label><input type="number" id="digits"></label> <br>
+                        <label id="error4" class="error"></label><br>
+                    </div>
+
+                    <div> <label><b>Sch name:</b></label>
+                        <label><input type="text" id="mess1"></label><br>
+                        <label id="error5" class="error"></label><br>
+                    </div>
+
+                    <div> <label><b>Address:</b></label>
+                        <label><input type="text" id="mess3"></label><br>
+                        <label id="error7" class="error"></label><br><br>
+                    </div>
+
+                    <div>
+                        <label><b>Country:</b></label>
+                        <select id="selectOption">
+                            <option value="">select</option>
+                            <option value="Africa">Africa</option>
+                            <option value="Asia">Asia</option>
+                            <option value="South">South America</option>
+                            <option value="North">North America</option>
+                            <option value="Others">Others</option>
+                        </select><br>
+                        <label id="error8" class="error"></label><br></div>
+
+                        <div> <label><b>Education Level:</b></label>
+                            <select id="selectOption1">
+                                <option value="">select</option>
+                                <option value="Level">O'Level</option>
+                                <option value="BSC">BSC/HND</option>
+                                <option value="Masters">Masters</option>
+                                <option value="Others1">Others</option>
+                            </select> <br>
+                            <label id="error10" class="error"></label><br>
+                        </div>
+                </div>
+            </div>
+            
+
+                <h1>Grade section</h1> <br>
+                <label ><h3>Subjects:</h></label><br>
+            <div class="main">
+               
+                <div>
+                    
+                    <select id="selectOption2" disabled style="width: 62px;">
+                        <option value="">English</option>
+                    </select>
+                    <input type="text" placeholder="score" class="score" id="scoreA"><br>
+                    <label id="error14" class="error"></label><br>
+                </div>
+               
+                <div>
+                    <select id="selectOption3" disabled style="width: 62px;">
+                        <option value="">Math</option>
+                    </select>
+                    <input type="text" placeholder="score" class="score" id="scoreB"><br>
+                    <label id="error15" class="error"></label><br>
+                </div>
+
+                <div>
+                    <select id="selectOption4" style="width: 62px;">
+                        <option value="">Select</option>
+                    </select>
+                    <input type="text" placeholder="score" class="score" id="score1"><br>
+                    <label id="error16" class="error"></label><br>
+                </div>
+                <div>
+                    
+                    <select id="selectOption5" style="width: 62px;">
+                        <option value="">Select</option>
+
+                    </select>
+                    <input type="text" placeholder="score" class="score" id="score2"><br>
+                    <label id="error17" class="error"></label>
+                    <br>
+                </div>
+
+
+                <div>
+                
+                    <select id="selectOption6" style="width: 62px;">
+                        <option value="">Select</option>
+                    </select>
+                    <input type="text" placeholder="score" class="score" id="score3"><br>
+                    <label id="error18" class="error"></label><br>
+                </div>
+                <div>
+                    <select id="selectOption7" style="width: 62px;">
+                        <option value="select">Select</option>
+                    </select>
+                    <input type="text" placeholder="score" class="score" id="score4"><br>
+                    <label id="error19" class="error"></label>
+                    <br>
+                </div>
+                <div>
+                    <select id="selectOption8" style="width: 62px;">
+                        <option value="select">Select</option>
+                    </select>
+                    <input type="text" placeholder="score" class="score" id="score5"><br>
+                    <label id="error20" class="error"></label>
+                    <br>
+                </div>
+                <div>
+                    <select id="selectOption9" style="width: 62px;">
+                        <option value="select">Select</option>
+                    </select>
+                    <input type="text" placeholder="score" class="score" id="score6"><br>
+                    <label id="error21" class="error"></label>
+                    <br>
+                </div>
+            </div></div>
+            </div>
+            <button type="button" id="btn_proceed" class="btn">Apply</button><br><br>
+            <label id="message" style="background-color: brown;color:white"></label><br><br><br>
+            <canvas id="myChart" style="width:100%;max-width:600px;" class="chart"></canvas>
+
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>
